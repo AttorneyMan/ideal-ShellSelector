@@ -21,6 +21,7 @@ function App() {
 
       </div>
       <h1>Two-Click Monty</h1>
+
       <div className="PlayerCard1" key="player1">
         <button onClick={() => setCount((count) => count + Math.random(3))}>
           count is {count.toFixed()}
@@ -38,6 +39,8 @@ function App() {
       </div>
       <p className="read-the-docs">
         Clicker beware because not all Clicks are made equal.. Just that sum clicks don't Add up!
+
+    
 
       </p>
     </>
