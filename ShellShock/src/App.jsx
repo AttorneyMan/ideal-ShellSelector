@@ -5,6 +5,7 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [countTwo, setCountTwo] = useState(0)
 
   return (
     <>
@@ -17,16 +18,24 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+      <div className="PlayerCard1" key="player1">
+        <button onClick={() => setCount((count) => count + Math.random(3))}>
+          count is {count.toFixed()}
         </button>
+      </div >
+      <div className="PlayerCard2" >
+        <button onClick={() => setCountTwo((countTwo) => countTwo + Math.random(3))}>
+          count is {countTwo.toFixed(0)}
+        </button>
+      </div>
+      <div className='TheRules'>
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          First to Score 11 Wins the Game!!
         </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
+
       </p>
     </>
   )
