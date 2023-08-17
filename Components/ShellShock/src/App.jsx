@@ -10,14 +10,13 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+
+        <img src={viteLogo} className="player1" alt="Vite logo" />
+
+        <img src={reactLogo} className="player2" alt="React logo" />
+
       </div>
-      <h1>Vite + React</h1>
+      <h1>Two-Click Monty</h1>
       <div className="PlayerCard1" key="player1">
         <button onClick={() => setCount((count) => count + Math.random(3))}>
           count is {count.toFixed()}
@@ -34,7 +33,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Clicker beware because not all Clicks are made equal.. Just that sum clicks don't Add up!
 
       </p>
     </>
