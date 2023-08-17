@@ -10,10 +10,14 @@ function App() {
   return (
     <>
       <div>
-
-        <img src={viteLogo} className="player1" alt="Vite logo" />
-
-        <img src={reactLogo} className="player2" alt="React logo" />
+        <a href='#' alt="" >
+          <img src={viteLogo} className="player1" alt="Vite logo" />
+        </a>
+        <div>
+          <a href="#" alt="">
+            <img src={reactLogo} className="player2" alt="React logo" />
+          </a>
+        </div>
 
       </div>
       <h1>Two-Click Monty</h1>
